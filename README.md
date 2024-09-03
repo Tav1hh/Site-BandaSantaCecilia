@@ -6,7 +6,7 @@ CREATE DATABASE `bandasantacecilia`;
 USE `bandasantacecilia`;
 ```
 
-depois criamos as seguintes Tabelas..
+depois criamos as seguintes Tabelas.. <br>
 Acervo Músical:
 ```
 CREATE TABLE `acervo_musical` (
