@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.card-part {
+    min-width: 100%;
+    height: 80px;
+}
+
+.card img{
+    height: 70px;
+}

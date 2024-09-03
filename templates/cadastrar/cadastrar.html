@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda Santa Cecilia</title>
+    <link rel="stylesheet" href="/Site-BandaSantaCecilia/estilos/style.css">
+    <link rel="stylesheet" href="cadastrar.css">
+    <script src="/Site-BandaSantaCecilia/scripts/script.js"></script>
+</head>
+<body>
+    <nav id="menu">
+
+    </nav>
+    <main>
+        <header id="cabecalho">
+
+        </header>
+        <article>
+            <nav>
+                <h2>Cadastrar</h2>
+                <button onclick="javascript:history.go(-1)"></button>
+
+            </nav>
+            <form action="cad.php" method="post">
+                <div>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required>
+                </div>
+                <div>
+                    <label for="inasc">Nascimento:</label>
+                    <input type="date" name="nasc" id="inasc" required>
+                </div>
+                <div>
+                    <label for="inum">Whatsapp:</label>
+                    <input type="number" name="num" id="inum" maxlength="11" placeholder="(**) * ****-****" required>
+                </div>
+                <div class="option">
+                    <div>
+                        <input type="radio" name="instrumento" id="iclarinete" value=" Clarineta" required> <label for="iclarinete">Clarinete</label> <br>
+                        <input type="radio" name="instrumento" id="iflautatransversal" value="Flauta Transversal" required> <label for="iflautatransversal">Flauta Transversal</label> <br>
+                        <input type="radio" name="instrumento" id="isaxsoprano" value="Sax Soprano" required> <label for="isaxsoprano">Sax Soprano</label> <br>
+                    </div> 
+                    <div>
+                        <input type="radio" name="instrumento" id="isaxalto" value="Sax Alto" required> <label for="isaxalto">Sax Alto</label> <br>
+                        <input type="radio" name="instrumento" id="isaxtenor" value="Sax Tenor" required> <label for="isaxtenor">Sax Tenor</label> <br>
+                        <input type="radio" name="instrumento" id="isaxbaritono" value="Sax Baritono" required> <label for="isaxbaritono">Sax Baritono</label> <br>
+                    </div>
+                    <div>
+                        <input type="radio" name="instrumento" id="itrompete" value="Trompete" required> <label for="itrompete">Trompete</label> <br>
+                        <input type="radio" name="instrumento" id="ibombardino" value="Bombardino" required> <label for="ibombardino">Bombardino</label> <br>
+                        <input type="radio" name="instrumento" id="itrompa" value="Trompa" required> <label for="itrompa">Trompa</label> <br>
+                    </div>
+                    <div>
+                        <input type="radio" name="instrumento" id="itrombone" value="Trombone" required> <label for="itrombone">Trombone</label> <br>
+                        <input type="radio" name="instrumento" id="ibaixobb" value="Baixo Bb" required> <label for="ibaixobb">Baixo Bb</label> <br>
+                        <input type="radio" name="instrumento" id="ibaixoeb" value="Baixo Eb" required> <label for="ibaixoeb">Baixo Eb</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="aluno_musico" id="ialuno" value="Aluno" required>
+                        <label for="ialuno">Aluno</label>
+
+                        <input type="radio" name="aluno_musico" id="imusico" value="Músico" required>
+                        <label for="imusico">Músico</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Cadastrar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </article>
+    </main>
+    <script src="/Site-BandaSantaCecilia/scripts/nav.js"></script>
+    <script src="/Site-BandaSantaCecilia/scripts/header.js"></script>
+</body>
+</html>

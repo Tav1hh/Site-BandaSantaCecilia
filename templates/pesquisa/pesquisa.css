@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+h3 {
+    width: 100%;
+    padding: 10px;
+}
+
+hr{
+    width: 100%;
+}
+
+.card-part {
+    min-width: 100%;
+    height: 80px;
+}
+
+.card-part img{
+    height: 70px;
+}
