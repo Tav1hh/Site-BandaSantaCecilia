@@ -1,19 +1,24 @@
 Para que o Sistema todo funcione corretamente é necessário criar algumas tabelas no banco de dado..
 
 Primeiro criamos o database e colocamos ele em uso:
-`CREATE DATABASE `bandasantacecilia`;
-USE `bandasantacecilia`;`
+```
+CREATE DATABASE `bandasantacecilia`;
+USE `bandasantacecilia`;
+```
 
 depois criamos as seguintes Tabelas..
 Acervo Músical:
-`CREATE TABLE `acervo_musical` (
+```
+CREATE TABLE `acervo_musical` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-);`
+);
+```
 
 Agenda:
-`CREATE TABLE `agenda` (
+```
+CREATE TABLE `agenda` (
   `evento` varchar(255) NOT NULL,
   `data` datetime NOT NULL,
   `dia` date NOT NULL,
@@ -21,10 +26,12 @@ Agenda:
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `descricao` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-);`
+);
+```
 
 Integrantes:
-`CREATE TABLE `integrantes` (
+```
+CREATE TABLE `integrantes` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) NOT NULL,
   `instrumento` varchar(100) NOT NULL,
@@ -39,10 +46,12 @@ Integrantes:
   `descricao` varchar(255) DEFAULT NULL,
   `foto_path` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-);`
+);
+```
 
 Partituras:
-`CREATE TABLE `partituras` (
+```
+CREATE TABLE `partituras` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `idmusica` bigint(20) unsigned NOT NULL,
   `instrumento` varchar(255) NOT NULL,
@@ -50,4 +59,5 @@ Partituras:
   PRIMARY KEY (`id`),
   KEY `partituras_acervo_musical_fk` (`idmusica`),
   CONSTRAINT `partituras_acervo_musical_fk` FOREIGN KEY (`idmusica`) REFERENCES `acervo_musical` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-);`
+);
+```
