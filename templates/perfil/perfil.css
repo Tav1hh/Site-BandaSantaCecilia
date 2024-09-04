@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+.card {
+    cursor: pointer;
+    min-width: 100%;
+    height: 50px;
+}
+
+.card img{
+    height: 40px;
+}
+
+.perfil {
+    margin: auto;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    background-color: white;
+    border: 3px solid #333;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    
+    padding: 10px;
+}
+
+img {
+    display: block;
+    min-width: 100px;
+    max-width: 200px;
+    width: 100%;
+}
+.perfil-conteudo{
+    display: flex;
+    align-items: center;
+}
+
+.perfil-conteudo {
+    width: 100%;
+}
+
+
+
+.perfil-bio{
+    text-align: justify;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.editar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* height: 200px; */
+    width: 200px;
+    transform: translate(-50% -50%);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: gray;
+}
+
+.edit-foto{
+    display: none;
+}
+
+.foto-principal {
+    /* display: none; */
+}
+
+input[type=file]{
+    display: none;
+}
