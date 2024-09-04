@@ -1,7 +1,7 @@
 <?php 
 include "scripts/conexao.php";
 
-$sql = "SELECT * FROM Integrantes WHERE aluno_musico = 'Aluno'";
+$sql = "SELECT * FROM Integrantes WHERE funcao = 'Aluno'";
 
 if ($resp = mysqli_query($conn,$sql)) {
     $totalAlunos = mysqli_num_rows($resp);
@@ -9,7 +9,7 @@ if ($resp = mysqli_query($conn,$sql)) {
     $totalAlunos = 0;
 }
 
-$sql = "SELECT * FROM Integrantes WHERE aluno_musico = 'Músico'";
+$sql = "SELECT * FROM Integrantes WHERE funcao = 'Músico'";
 
 if ($resp = mysqli_query($conn,$sql)) {
     $totalMusicos = mysqli_num_rows($resp);

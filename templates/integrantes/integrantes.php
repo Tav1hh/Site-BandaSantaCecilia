@@ -45,7 +45,7 @@ if (isset($_GET['alt']) & isset($_GET['id']) & isset($_GET['classe'])) {
 
 
 
-$sql = "SELECT * FROM Integrantes WHERE aluno_musico = 'Músico'";
+$sql = "SELECT * FROM Integrantes WHERE funcao = 'Músico'";
 $resp = mysqli_query($conn,$sql) ;
 ?>
 <!DOCTYPE html>

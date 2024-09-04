@@ -3,7 +3,7 @@ include "../../scripts/conexao.php";
 
 $fun = $_GET['fun'];
 
-$sql = "SELECT * FROM Integrantes WHERE aluno_musico = '$fun'";
+$sql = "SELECT * FROM Integrantes WHERE funcao = '$fun'";
 
 $resp = mysqli_query($conn,$sql) ;
 ?>

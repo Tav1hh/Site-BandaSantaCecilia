@@ -6,10 +6,10 @@ if (isset($_POST['psq'])) {
 
     $psq = $_POST['psq'];
     
-    $sql = "SELECT * FROM integrantes WHERE aluno_musico = 'Aluno' and nome LIKE '%$psq%'";
+    $sql = "SELECT * FROM integrantes WHERE funcao = 'Aluno' and nome LIKE '%$psq%'";
     $alunos = mysqli_query($conn,$sql);
     
-    $sql = "SELECT * FROM integrantes WHERE aluno_musico = 'Músico' and nome LIKE '%$psq%'";
+    $sql = "SELECT * FROM integrantes WHERE funcao = 'Músico' and nome LIKE '%$psq%'";
     $musicos = mysqli_query($conn,$sql);
 
     $sql = "SELECT * FROM acervo_musical WHERE nome LIKE '%$psq%'";
@@ -21,7 +21,7 @@ if (isset($_POST['psq'])) {
 }
 
 
-// $sql = "SELECT * FROM Integrantes WHERE aluno_musico = 'Aluno'";
+// $sql = "SELECT * FROM Integrantes WHERE funcao = 'Aluno'";
 // $alunos = mysqli_query($conn,$sql) ;
 
 
